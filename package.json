@@ -13,26 +13,25 @@
     "supabase:generate-types": "supabase gen types typescript --local > types/supabase.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.5.1",
     "@supabase/supabase-js": "^2.38.5",
-    "@supabase/auth-helpers-nextjs": "^0.8.7",
-    "@supabase/auth-helpers-react": "^0.4.2",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "tailwindcss": "^3.3.0",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "lucide-react": "^0.294.0",
     "clsx": "^2.0.0",
-    "tailwind-merge": "^2.0.0"
+    "lucide-react": "^0.294.0",
+    "next": "^14.2.30",
+    "postcss": "^8",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "eslint-config-next": "^14.2.30",
     "supabase": "^1.127.4"
   }
 }

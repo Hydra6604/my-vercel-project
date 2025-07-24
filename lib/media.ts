@@ -1,8 +1,8 @@
 import { supabase } from './supabase'
 import { Database } from '../types/supabase'
-import { uploadFile, generateFileName, getFileUrl } from '../utils/storage'
+import { uploadFile, generateFileName } from '../utils/storage'
 
-type MediaFile = Database['public']['Tables']['media_files']['Row']
+export type MediaFile = Database['public']['Tables']['media_files']['Row']
 type MediaFileInsert = Database['public']['Tables']['media_files']['Insert']
 type MediaFileUpdate = Database['public']['Tables']['media_files']['Update']
 
