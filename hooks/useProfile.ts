@@ -21,6 +21,9 @@ export function useProfile() {
     async function fetchProfile() {
       try {
         setLoading(true)
+        if (!user) {
+          throw new Error('No user found')
+        }
         const { data, error } = await supabase
           .from('profiles')
           .select('*')
